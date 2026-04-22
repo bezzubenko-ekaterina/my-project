@@ -1,0 +1,86 @@
+{
+  "name": "@frihet/mcp-server",
+  "version": "1.4.0",
+  "description": "AI-native MCP server for business management — invoices, expenses, clients, products, quotes, webhooks. 35 tools with business intelligence. Works with Claude, Cursor, Windsurf, Cline.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "frihet-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "postinstall": "node scripts/postinstall.js || true",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "accounting",
+    "ai",
+    "ai-agent",
+    "anthropic",
+    "automation",
+    "billing",
+    "business-management",
+    "claude",
+    "clients",
+    "cline",
+    "codex",
+    "copilot",
+    "cursor",
+    "erp",
+    "expenses",
+    "fintech",
+    "frihet",
+    "invoicing",
+    "llm",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "quotes",
+    "saas",
+    "tax-compliance",
+    "verifactu",
+    "webhooks",
+    "windsurf"
+  ],
+  "author": "BRTHLS <viktor@brthls.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frihet-io/frihet-mcp.git"
+  },
+  "mcpName": "io.github.berthelius/frihet",
+  "homepage": "https://docs.frihet.io/desarrolladores/mcp-server",
+  "funding": {
+    "type": "individual",
+    "url": "https://frihet.io/pricing"
+  },
+  "bugs": {
+    "url": "https://github.com/Frihet-io/frihet-mcp/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "scripts",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.0"
+  },
+  "peerDependencies": {
+    "zod": ">=3.25.0"
+  },
+  "peerDependenciesMeta": {
+    "zod": {
+      "optional": false
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "zod": "^3.25.0"
+  }
+}

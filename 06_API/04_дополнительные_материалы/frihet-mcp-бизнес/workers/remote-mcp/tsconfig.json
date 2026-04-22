@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022"],
+    "types": ["@cloudflare/workers-types"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "src/**/*",
+    "worker-configuration.d.ts",
+    "../../src/tools/**/*",
+    "../../src/resources/**/*",
+    "../../src/prompts/**/*",
+    "../../src/client-interface.ts",
+    "../../src/types.ts",
+    "../../src/logger.ts",
+    "../../src/metrics.ts"
+  ],
+  "exclude": ["node_modules"]
+}
